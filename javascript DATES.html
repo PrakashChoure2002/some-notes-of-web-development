@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+
+</head>
+
+<body>
+    <div class="container">
+        this is a container current time is
+        <spam id="time">OUR CLOCK</spam>
+
+    </div>
+    <script>
+        let newDate = new Date(3020, 4, 6, 9, 3, 2, 34)
+        let yr = newDate.getFullYear();
+        console.log("the year is ", yr);
+
+        let dat = newDate.getDate();
+        console.log("the date is ", dat);
+
+        let month = newDate.getMonth();
+        console.log("the month is ", month);
+
+        let hours = newDate.getHours();
+        console.log("the hours is ", hours);
+
+        let seconds = newDate.getSeconds();
+        console.log("the secconds is ", seconds);
+
+        let miliseconds = newDate.getMilliseconds();
+        console.log("the milisecond is ", miliseconds);
+        newDate.setDate(45)
+        console.log(newDate)
+
+        setInterval(updateTime, 1000);
+
+        function updateTime() {
+            time.innerHTML = new Date;
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>payment form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+    <from action=" ">
+        <h1 class="main_line"> payment from</h1><hr>
+         <p>required *</p><hr>
+        <h2> User information</h2>
+        <p> name * <input type="text" name="name" placeholder=" your name" required></p>
+
+        <fieldset>
+            <legand> GENDER*</legand>
+            <p>
+                male <input type="radio" name="gender" id=" "> female <input type="radio" name="gender" id=" ">
+
+            </p>
+        </fieldset>
+        <p> Address: * <textarea name="address " id=" address" cols=" 50" rows=" 10" placeholder="your Address"></textarea></p>
+        <p> Email :-<input type="email" name=" email" id=" email" placeholder="____@gmail.com"></p>
+        <p> pincode:* <input type="number" name="PINCODE" id=" pincode" placeholder="123456"></p>
+        <hr>
+        <h2> payment information</h2>
+        <p> card type:*
+            <select name="card_type " id="card_ type">
+            <option value=""> --select a card type--</option>
+            <option value =" visa" > visa</option>
+            <option value =" mastercard" > mastercard</option>
+            <option value =" rupay" > rupay</option>
+            <option value =" sex" > sex </option>
+            <option value="other">other</option><div::after input type="text" name="other" placeholder="enter another card">
+
+            
+
+        
+        </select>
+        </p>
+        <p>
+            card number<input type="number" name="card _number" id="number" placeholder="xxxx-xxxx-xxxx-xxxx">
+        </p>
+        <p>
+            expire date <input type="date " name="exp_date " id="expir date" placeholder="dd/mm/yyyy">
+        </p>
+        <p>
+            cvv passward<input type="passward" name="cvv " id="passward"placeholder="123">
+       <hr>
+        </p>
+        <input type="submit" value="pay now">
+ </p>
+    </from>
+</div>
+</body>
+
+</html>

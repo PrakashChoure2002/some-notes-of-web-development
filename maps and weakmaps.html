@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAPS AND WEAKMAPS</title>
+</head>
+
+<body>
+    <div class="container">
+        this is maps and weak mapsing
+    </div>
+    <script>
+        // const x = {}
+        const a = {}
+        const b = {
+            num: 1
+        }
+
+        //x[a] = 'a';
+        //x[b] = 'b'
+        //console.log(x[b])
+        //  const map = new Map();
+        //  map.set(a, 'a').set(b, 'b').set(a, 'c')
+        //map.delete(b)
+        //  for (let [key, value] of map.entries()) {
+        //     console.log(key, value);
+        // }
+        // console.dir(map);
+        //const arr = [...map]
+        //console.dir(arr)
+        //WEAK MAP
+        {
+            let x = {
+                a: [1, 2]
+
+            };
+            var weakmap = new WeakMap();
+            weakmap.set(x, 'something')
+        }
+        console.log(weakmap)
+    </script>
+
+</body>
+
+</html>

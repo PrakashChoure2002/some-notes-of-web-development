@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITERATORS</title>
+</head>
+<div class="container">
+    this is ITERATORS
+</div>
+<script>
+    function fruitsIterator(values) {
+        let nextIndex = 0
+        return {
+            next: function() {
+                if (nextIndex < values.length) {
+                    return {
+                        value: values[nextIndex++],
+                        done: false
+                    }
+
+                } else {
+                    return {
+                        done: true
+                    }
+                }
+
+            }
+        }
+
+    }
+    const myArray = ["apple", "graphs", "orange"]
+    console.log(myArray)
+    const fruits = fruitsIterator(myArray)
+    console.log(fruits.next().value)
+    console.log(fruits.next().value)
+    console.log(fruits.next().value)
+</script>
+
+<body>
+
+</body>
+
+</html>

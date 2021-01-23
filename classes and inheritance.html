@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLASSES</title>
+</head>
+
+<body>
+    <div class="container">
+        this is class in html
+
+    </div>
+    <script>
+
+        //class
+        class Employee {
+            constructor(givenName, givenExperiance, givenDivision) {
+                    this.name = givenName
+                    this.experiance = givenExperiance
+                    this.division = givenDivision
+                }
+                // joiningYear() {
+                //   return 2020 - this.experiance
+                // }
+                // static add(a, b) {
+                //       return a + b;
+                // }
+        }
+        prakash = new Employee("prakash", 12, `grade 'A' `)
+        console.log(prakash) //.joiningYear())
+            // console.log(Employee) //.add(65, 32))
+
+
+
+
+        //INHERITANCE
+
+        class Programmer extends Employee {
+            constructor(givenName, givenExperiance, givenDivision, langauge, github) {
+                super(givenName, givenExperiance, givenDivision)
+                this.langauge = langauge
+                this.github = github
+
+            }
+            favouritelangauge() {
+                if (this.langauge == 'c++') {
+                    return " phyton"
+
+                } else {
+                    return "javascript"
+                }
+            }
+            static multiplye(a, b) {
+                return a * b;
+            }
+        }
+        pawan = new Programmer("pawan", 18, `grade 'A' `, "c#", "pawan420")
+        console.log(pawan)
+        console.log(pawan.favouritelangauge())
+        console.log(Programmer.multiplye(5, 6))
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+                        p {
+                            color: blue;
+                        }
+                        
+                        a {
+                            color: crimson;
+                        }
+                        
+                        li {
+                            list-style-type: none;
+                        }
+                        
+                        p::after {
+                            content: " - Remember this";
+                            background-color: yellow;
+                            color: red;
+                            font-weight: bold;
+                        }
+                        
+                        h1 {
+                            color: chartreuse;
+                        }

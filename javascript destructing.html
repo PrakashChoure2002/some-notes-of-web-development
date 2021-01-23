@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>destructuring</title>
+</head>
+
+<body>
+    <div class="containr">
+        javascripit destructuring
+    </div>
+    <script>
+        //array destructing
+        let a, b;
+        [a, b] = [34, 56]
+        console.log(a, b);
+        [a, b, c, ...d] = [1, 2, 3, 4, 44, 55, 66, 77, 21, 12, 34, ];
+        //     console.log(a)
+        //   console.log(b)
+        // console.log(c)
+        // console.log(d)
+
+        const numbers = [55, 66, 77, 88, 33];
+        [e, f, g, ...h] = numbers;
+        console.log(e)
+        console.log(f)
+        console.log(g)
+        console.log(h)
+            //console.log(e)
+            //object destructing
+        let employee = {
+            name: " you name",
+            age: 1,
+            gender: "other",
+            mobile: "jo tara baap na diya hai",
+            start: function() {
+                console.log('started');
+            }
+        }
+        let {
+            name,
+            age,
+            gender,
+            mobile
+        } = employee
+        console.log(name, age, gender, mobile);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+p {
+    background-color: rgb(146, 123, 22);
+}
+
+a:hover {
+    color: khaki;
+    text-decoration: lawngreen;
+}

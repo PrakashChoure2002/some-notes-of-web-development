@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spread and operator</title>
+</head>
+
+<body>
+    <div class="container">
+        this is sperad and operator
+    </div>
+    <script>
+        //  let x = [1, 2, 3, 4]
+        //let y = [5, 6, 7]
+        //console.log(x.concat(...y))
+        let x = [1, 2, 3, ]
+        let fun = function(...arg) {
+            console.log(arg)
+        }
+        fun(...x)
+        let y = [3, 4]
+        console.log(Math.hypot(...y))
+        let z = [3, 2, 36, 96, 5, 4, 22, 99, 55]
+        console.log(Math.min(...x))
+    </script>
+</body>
+
+</html>

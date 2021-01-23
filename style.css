@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    background-color:rgba(231, 216, 216, 0.842);
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px,30px;
+    font-size: 17px;
+    padding: 10px;
+    background-color: dimgrey;
+    font-style: italic;
+    
+    
+}
+.heading{
+    background-color: darkseagreen;
+    padding: 5px,5px,2px;
+    color:rgba(145, 34, 219, 0.678);
+    text-align: center;
+}
+.container{
+    background-color: rgba(205, 218, 221, 0.747);
+    padding: 5px 10px 20px;
+    border: 2px solid tomato;
+    border-radius: 3px;
+    text-shadow: 0 1px 0 rgb(0,0,0,.5);
+    font-style: italic;
+    
+
+    
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+select,
+textarea{
+    width: 600px;
+    padding: 5px;
+    border:2px solid rgba(204, 17, 26, 0.692);
+    border-radius: 5px;
+    margin: 10px;
+    
+}
+fieldset{
+    background-color: rgb(206, 204, 200);
+    border:2px rgb(19, 18, 19);
+}
+.main_line{
+    text-align: center;
+}
+input[type="button"]{
+    background-color: red;
+    border:5px royalblue;
+    border-radius: 10px;
+    padding: 12px 20px;
+    cursor: pointer;
+    width: 100%;
+    font-size: medium;
+    font-weight: 800;
+
+}
+input[type="button"]:hover{
+    background-color: seagreen;
+    color: cornflowerblue;
+}
+.name{
+    background-color: darkkhaki; 
+    color: darkred;
+}
+.name:hover{
+    background-color: lime;
+}

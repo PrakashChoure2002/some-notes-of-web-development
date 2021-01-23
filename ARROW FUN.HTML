@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARROW FUNCTION</title>
+</head>
+
+<body>
+    <div class="container">
+        this is arrow function
+    </div>
+    <script>
+        //function greet() {
+        //   console.log('good morning')
+
+        //  }
+        // greet();
+        //  let a = 4;
+        // let b = 6;
+        // let sum = (a, b) => a + b;
+
+        let obj1 = {
+            next: "naugthy",
+            names: ["potter", "rohan", "shubam", "soham"],
+            speak() {
+                this.names.forEach((people) => {
+
+                    console.log(this.next + " " + "mc" + " " + people);
+
+                });
+            }
+        }
+        obj1.speak();
+
+
+        function prakash() {
+            console.log("i am good")
+        }
+        prakash()
+
+        //   let greet = () => "good morning"
+        //return don't required {} basic also
+        //  console.log(greet())
+        //  let greet = () =>
+        // ({
+        name: "i am fine"
+            // })
+
+        // console.log(greet())
+
+
+        let now = (name, ending) => "good morning" + " " + name + ending;
+        console.log(now("pawan", " ", "bye")) //we ca change value in place of now  to anything
+
+
+        
+        //        let obj2 = {
+        //          class: "you should  now",
+        //        fathername: "tara bap ko puch",
+        //      sex: "no",
+        //    speak() {
+        //      this.class.forEach((fathername) => {
+        //        console.log(this.sex + " " + fathername);
+        //  });
+
+
+
+
+        //}
+
+
+        //}
+        //obj2.speak();
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SETS AND WEAKSETS</title>
+</head>
+
+<body>
+    <div class="container">
+        this is sets and weak sets in javascripts
+    </div>
+    <script>
+        //hold uniqe value
+        //  const arr = [1, 2, 3, 4, ];
+        //    const mySet = new Set(arr);
+        //      mySet.add(5);
+        //
+        // console.log(mySet);
+        //for (let val of mySet) {
+        //      console.log(val);
+        //    }
+        // const arr = [1, 2, 2, 6, 6, 8, 8]
+        //   console.log([...new Set(arr)])
+        //WEAK SET
+        const ws = new WeakSet([{
+            a: 1
+        }, {
+            b: 2
+        }]);
+        //for (let val of ws) {
+        //  console.log(val); don't work "val"
+        //}
+        console.log(ws);
+    </script>
+
+</body>
+
+</html>

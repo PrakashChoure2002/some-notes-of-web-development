@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>symbole</title>
+</head>
+
+<body>
+    <div class="container">
+        this is symbole
+    </div>
+    <script>
+        const sym1 = Symbol('My identifier')
+        console.log('Symbol is', sym1)
+        console.log(typeof sym1)
+
+        const k1 = Symbol();
+        const k2 = Symbol();
+
+        myObj = {};
+        myObj[k1] = "chutiya"
+        myObj[k2] = "mc"
+        myObj["name"] = "gandu"
+        console.log(myObj[k1])
+        console.log(myObj[k2])
+        console.log(myObj)
+        console.log(myObj["name"])
+            //symbole are ingored in loop
+        for (key in myObj) {
+
+            console.log(key, myObj[key])
+
+        }
+        console.log(JSON.stringify(myObj))
+    </script>
+
+</body>
+
+</html>
